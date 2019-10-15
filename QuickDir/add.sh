@@ -9,4 +9,4 @@ echo -e '\e[0m'
 
 echo -e '\e[36mInput directory to add:\e[0m'
 read NEWDIR
-echo $NEWDIR >> ~/.mp/Git/list
+echo $NEWDIR >> ~/.mp/Ref_Lists/QuickDir-list

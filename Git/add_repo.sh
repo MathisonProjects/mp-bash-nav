@@ -9,4 +9,4 @@ echo -e '\e[0m'
 
 echo -e '\e[36mInput repo to add:\e[0m'
 read REPO
-echo $REPO >> ~/.mp/Git/repos
+echo $REPO >> ~/.mp/Ref_Lists/Git-list

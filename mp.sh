@@ -15,7 +15,6 @@ _quickdir() {
 }
 
 _git() {
-	# add pull
 	if [ ! -z $1 ]; then
 		if [ $1 = "go" ]; then
 			~/.mp/Git/push.sh
@@ -27,9 +26,14 @@ _git() {
 	fi
 }
 
+_template() {
+	if [ ! -z $1 ]; then
+		
+	fi
+}
+
 _run() {
 	echo
-
 	if [ ! -z $1 ]; then
 		if [ $1 = "-h" ] || [ $1 = "help" ]; then
 			_help
@@ -37,11 +41,11 @@ _run() {
 			_quickdir $2
 		elif [ $1 = "Git" ] || [ $1 == "git" ]; then
 			_git $2
+		elif [ $1 = "Template" ] || [ $1 == "template" ]; then
+			_template $2
 		fi
 	fi
-
 	echo
-
 	_help
 }
 
@@ -50,6 +54,7 @@ _help() {
 	echo -e "\e[33mmp \e[94m[ -h | help ]                  \e[0m# Displays Help Command"
 	echo -e "\e[33mmp \e[94mQuickDir [ go | add | remove ] \e[0m# Goes to/adds/removes directory"
 	echo -e "\e[33mmp \e[94mGit [ push | pull | add ]      \e[0m# Pushes/Pulls/Adds git Repository"
+	echo -e "\e[33mmp \e[94mTemplate cp                    \e[0m# Copies a template file to current directory"
 	echo
 	echo -e "\e[36mWhat command do you wish to run?\e[0m"
 	echo -n "Enter a command, and press [ENTER] or hit CTRL + C: "

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DIRECTORYLIST=~/.mp/QuickDir/list
+DIRECTORYLIST=~/.mp/Ref_Lists/QuickDir-list
 COUNTER=1
 
 echo -e '\e[32m'
@@ -24,5 +24,5 @@ echo -e "\e[33m|-----------------------------------------------------|"
 echo "DELETING LINE #${SELECTION}"
 echo -e "\e[33m|-----------------------------------------------------|"
 
-sed "${SELECTION}d" ~/.mp/QuickDir/list > ~/.mp/QuickDir/list.tmp
-mv ~/.mp/QuickDir/list.tmp ~/.mp/QuickDir/list
+sed "${SELECTION}d" ~/.mp/Ref_Lists/QuickDir-list > ~/.mp/Ref_Lists/QuickDir-list.tmp
+mv ~/.mp/Ref_Lists/QuickDir-list.tmp ~/.mp/Ref_Lists/QuickDir-list

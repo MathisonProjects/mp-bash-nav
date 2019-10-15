@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DIRECTORYLIST=~/.mp/Git/repos
+DIRECTORYLIST=~/.mp/Ref_Lists/Git-list
 COUNTER=0
 
 echo -e '\e[32m'

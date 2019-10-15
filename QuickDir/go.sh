@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DIRECTORYLIST=~/.mp/QuickDir/list
+DIRECTORYLIST=~/.mp/Ref_Lists/QuickDir-list
 COUNTER=0
 
 echo -e '\e[32m'

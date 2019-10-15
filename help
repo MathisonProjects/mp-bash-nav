@@ -1,0 +1,6 @@
+Usage:
+
+mp [ -h | help ]
+mp [ QuickDir | quickdir ] [ go | add | remove ]
+mp [ Git | git ] [ push | pull | add ]
+mp [ Template | template ] cp
