@@ -25,7 +25,7 @@ $ echo "source ~/.mp/mp.sh" >> ~/.bashrc
 
 Debugging:
 
-Sometimes, the above command will end up outputting into your bootup the entire line. Simply go into your file and update the line to be inside of .bashrc to be:
+Sometimes, the above command will end up outputting into your bootup the entire line. Simply go into your file and update the line to be inside of .bashrc or .bash_profile to be:
 
 ```sh
 source ~/.mp/mp.sh
