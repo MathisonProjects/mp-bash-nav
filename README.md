@@ -4,6 +4,33 @@
 
 The objective is to consolidate a number of bash commands into ready and quick to use functions to handle a customized environment.
 
+## Installation
+
+- Download the script into your root
+```sh
+$ git clone https://github.com/Divinityfound/mp-bash-nav.git > ~/.mp
+```
+
+- Add it as a source in your startup script (Eg: ~/.bash_profile, ~/.bashrc)
+
+OPTION 1:
+```sh
+$ echo "source ~/.mp/mp.sh" >> ~/.bash_profile
+```
+
+OPTION 2 (My environment):
+```sh
+$ echo "source ~/.mp/mp.sh" >> ~/.bashrc
+```
+
+Debugging:
+
+Sometimes, the above command will end up outputting into your bootup the entire line. Simply go into your file and update the line to be inside of .bashrc to be:
+
+```sh
+source ~/.mp/mp.sh
+```
+
 ## Commands
 
 Once you start the program, to escape it, simply press CTRL + C. It loops back in on itself due to the need to run a number of processes in sequence.
