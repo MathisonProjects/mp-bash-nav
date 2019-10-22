@@ -36,11 +36,13 @@ source ~/.mp/mp.sh
 Once you start the program, to escape it, simply press CTRL + C. It loops back in on itself due to the need to run a number of processes in sequence.
 
 ```sh
-$ mp # Boots the program.
-$ mp [ -h | help ] # Displays Help Command
+Usage:
+
+$ mp [ -h | help ]                                 # Displays Help Command
 $ mp [ QuickDir | quickdir ] [ go | add | remove ] # Goes to/adds/removes directory
-$ mp [ Git | git ] [ push | pull | add ] # Pushes/Pulls/Adds git Repository
-$ mp [ Template | template ] cp # Copies a template file to current directory
+$ mp [ Git | git ] [ push | pull | add ]           # Pushes/Pulls/Adds git Repository
+$ mp [ Template | template ] cp                    # Copies a template file to current directory
+$ mp [ Logs | logs ] [ clear | add | remove ]      # Manages known memory hogs
 ```
 
 ### If you wish to know more about me...

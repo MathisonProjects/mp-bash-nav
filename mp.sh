@@ -28,8 +28,25 @@ _git() {
 
 _template() {
 	if [ ! -z $1 ]; then
-		
+		echo 'hi'
 	fi
+}
+
+_logs() {
+	if [ ! -z $1 ]; then
+		if [ $1 = "clear" ]; then
+			~/.mp/Logs/clear.sh
+		elif [ $1 = "remove" ]; then
+			~/.mp/Logs/remove.sh
+		elif [ $1 = "add" ]; then
+			~/.mp/Logs/add.sh
+		fi
+	fi
+}
+
+_laravelChmod() {
+	chmod -R 755 ./.
+	chmod -R 777 storage/ bootstrap/
 }
 
 _run() {
@@ -43,6 +60,10 @@ _run() {
 			_git $2
 		elif [ $1 = "Template" ] || [ $1 == "template" ]; then
 			_template $2
+		elif [ $1 = "Logs" ] || [ $1 == "logs" ]; then
+			_logs $2
+		elif [ $1 = "LaravelChmod" ] || [ $1 == "laravelchmod" ]; then
+			_laravelChmod
 		fi
 	fi
 	echo
@@ -51,10 +72,12 @@ _run() {
 
 _help() {
 	echo "Usage:"
-	echo -e "\e[33mmp \e[94m[ -h | help ]                  \e[0m# Displays Help Command"
-	echo -e "\e[33mmp \e[94mQuickDir [ go | add | remove ] \e[0m# Goes to/adds/removes directory"
-	echo -e "\e[33mmp \e[94mGit [ push | pull | add ]      \e[0m# Pushes/Pulls/Adds git Repository"
-	echo -e "\e[33mmp \e[94mTemplate cp                    \e[0m# Copies a template file to current directory"
+	echo -e "\e[33mmp \e[94m[ -h | help ]                            \e[0m# Displays Help Command"
+	echo -e "\e[33mmp \e[94mQuickDir [ go | add | remove ]           \e[0m# Goes to/adds/removes directory"
+	echo -e "\e[33mmp \e[94mGit [ push | pull | add ]                \e[0m# Pushes/Pulls/Adds git Repository"
+	echo -e "\e[33mmp \e[94mTemplate cp                              \e[0m# Copies a template file to current directory"
+	echo -e "\e[33mmp \e[94m[ Logs | logs ] [ clear | add | remove ] \e[0m# Manages known memory hogs"
+	echo -e "\e[33mmp \e[94m[ LaravelChmod | laravelchmod]           \e[0m# Sets the proper permissions for Laravel"
 	echo
 	echo -e "\e[36mWhat command do you wish to run?\e[0m"
 	echo -n "Enter a command, and press [ENTER] or hit CTRL + C: "
