@@ -95,5 +95,11 @@ _placeholder() {
 }
 
 mp(){
-	_help
+	if [ ! -z $1 ] && [ -z $2 ]; then
+		_run $1
+	elif [ ! -z $2 ]; then
+		_run $1 $2
+	else
+		_help
+	fi
 }
