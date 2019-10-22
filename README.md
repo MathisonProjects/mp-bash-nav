@@ -43,6 +43,7 @@ $ mp [ QuickDir | quickdir ] [ go | add | remove ] # Goes to/adds/removes direct
 $ mp [ Git | git ] [ push | pull | add ]           # Pushes/Pulls/Adds git Repository
 $ mp [ Template | template ] cp                    # Copies a template file to current directory
 $ mp [ Logs | logs ] [ clear | add | remove ]      # Manages known memory hogs
+$ mp [ LaravelChmod | laravelchmod ]               # Sets the proper permissions for Laravel
 ```
 
 ### If you wish to know more about me...
