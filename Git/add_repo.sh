@@ -1,12 +1,3 @@
 #!/bin/bash
 
-echo -e '\e[32m'
-echo "
-|-----------------------------------------------------|
-|-------------------ADDING REPOSITORY-----------------|
-|-----------------------------------------------------|"
-echo -e '\e[0m'
-
-echo -e '\e[36mInput repo to add:\e[0m'
-read REPO
-echo $REPO >> ~/.mp/Ref_Lists/Git-list
+~/.mp/funcs/addLineToFile.sh "ADDING-REPOSITORY" "Input repo to add:" ~/.mp/Ref_Lists/Git-list

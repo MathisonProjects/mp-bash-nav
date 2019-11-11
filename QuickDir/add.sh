@@ -1,12 +1,4 @@
 #!/bin/bash
 
-echo -e '\e[32m'
-echo "
-|-----------------------------------------------------|
-|-------------------ADDING DIRECTORY------------------|
-|-----------------------------------------------------|"
-echo -e '\e[0m'
+~/.mp/funcs/addLineToFile.sh "ADDING-DIRECTORY" "Input directory to add:" ~/.mp/Ref_Lists/QuickDir-list
 
-echo -e '\e[36mInput directory to add:\e[0m'
-read NEWDIR
-echo $NEWDIR >> ~/.mp/Ref_Lists/QuickDir-list
