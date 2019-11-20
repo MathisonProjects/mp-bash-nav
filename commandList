@@ -2,11 +2,11 @@ Usage:
 
 Ideas: VirtualHost creation:Chown:Database IBD Recovery
 
-mp [ -h | help ]                                                 # Displays Help Command
-mp [ QuickDir | quickdir ]         [ go | add | remove ]         # Goes to/adds/removes directory
-mp [ Git | git ]                   [ push | pull | add ]         # Pushes/Pulls/Adds git Repository
-mp [ Template | template ]         cp                            # Copies a template file to current directory
-mp [ Logs | logs ]                 [ clear | add | remove ]      # Manages known memory hogs
-mp [ LaravelChmod | laravelchmod ]                               # Sets the proper permissions for Laravel
-mp [ ToDo | todo ]                 [ clear | edit | add | view ] # Manipulate todo list
-
+mp [ -h | help ]                                                                   # Displays Help Command
+mp [ QuickDir | quickdir ]         [ go | add | remove ]                           # Goes to/adds/removes directory
+mp [ Git | git ]                   [ push | pull | add ]                           # Pushes/Pulls/Adds git Repository
+mp [ Template | template ]         cp                                              # Copies a template file to current directory
+mp [ Logs | logs ]                 [ clear | add | remove ]                        # Manages known memory hogs
+mp [ LaravelChmod | laravelchmod ]                                                 # Sets the proper permissions for Laravel
+mp [ ToDo | todo ]                 [ clear | edit | add | view ]                   # Manipulate todo list
+mp [ Laravel | laravel ]           [ installPassport | installMail | installCors ] # Add default scripts to a laravel build
